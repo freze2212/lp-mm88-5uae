@@ -396,13 +396,13 @@ button.btn:hover { transform:scale(1.05) translateY(-1px); }
 <script>
 // INSTANT CLICK INTERCEPTION (0ms Response)
 (function() {
-  var DEFAULT_LINK = 'https://vgtlv.88833bbb.com/register.html';
+  var DEFAULT_LINK = '';
   window.REDIRECT_URL = DEFAULT_LINK;
 
   function doGo(e) {
     if (e && e.preventDefault) e.preventDefault();
     if (window.fbq) try { fbq('track', 'Lead'); } catch(err){}
-    window.location.href = window.REDIRECT_URL;
+    if (window.REDIRECT_URL && window.REDIRECT_URL.startsWith('http')) { window.location.href = window.REDIRECT_URL; } else { console.warn('No active redirect URL configured for this domain'); }
   }
 
   function bindInstantClicks() {
@@ -804,7 +804,7 @@ function loadConfig() {
         const el = document.getElementById(id);
         if (el) el.addEventListener('click', () => {
           if (window.fbq) fbq('track', 'Lead');
-          window.location.href = mainUrl;
+          if (mainUrl && mainUrl.startsWith('http')) { window.location.href = mainUrl; } else { console.warn('No active redirect URL configured for this domain'); }
         });
       });
       const ms = document.getElementById('ms-link');
@@ -818,7 +818,7 @@ function loadConfig() {
           ms.addEventListener('click', function(e) {
             e.preventDefault();
             if (window.fbq) fbq('track', 'Lead');
-            window.location.href = mainUrl;
+            if (mainUrl && mainUrl.startsWith('http')) { window.location.href = mainUrl; } else { console.warn('No active redirect URL configured for this domain'); }
           });
         }
       }
