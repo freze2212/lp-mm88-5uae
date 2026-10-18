@@ -1,16 +1,4 @@
 {
-  "mm88.online": {
-    "main_url": "https://vgtlv.88833bbb.com/register.html",
-    "messenger_url": "https://vgtlv.88833bbb.com/register.html",
-    "telegram_url": "https://vgtlv.88833bbb.com/register.html",
-    "updated_at": "2026-09-08T15:16:57.380Z"
-  },
-  "www.mm88.online": {
-    "main_url": "https://vgtlv.88833bbb.com/register.html",
-    "messenger_url": "https://vgtlv.88833bbb.com/register.html",
-    "telegram_url": "https://vgtlv.88833bbb.com/register.html",
-    "updated_at": "2026-09-08T15:16:57.381Z"
-  },
   "mm88h.us": {
     "main_url": "https://dcrsw.mm88rr.com/register.html",
     "messenger_url": "https://dcrsw.mm88rr.com/register.html",
@@ -50,5 +38,15 @@
     "main_url": "https://wux1t.mm4555.com/register.html",
     "messenger_url": "https://wux1t.mm4555.com/register.html",
     "telegram_url": "https://wux1t.mm4555.com/register.html"
+  },
+  "mm88.online": {
+    "main_url": "https://wonel.88833bbb.com/register.html",
+    "messenger_url": "https://wonel.88833bbb.com/register.html",
+    "telegram_url": "https://wonel.88833bbb.com/register.html"
+  },
+  "www.mm88.online": {
+    "main_url": "https://wonel.88833bbb.com/register.html",
+    "messenger_url": "https://wonel.88833bbb.com/register.html",
+    "telegram_url": "https://wonel.88833bbb.com/register.html"
   }
 }
